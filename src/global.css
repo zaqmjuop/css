@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+pre {
+    background-color: #ddd;
+    padding: 10px;
+    margin: 10px;
+}
+code{
+    color: blue;
+}
+blockquote{
+    color: blue;
+    border-left: 5px solid blue;
+    background-color: #ddf;
+    margin: 1em;
+    padding:1em;
+    border-radius: 5px;
+}
+section{
+    margin: 0;
+    padding: 3px;
+    border: 3px inset #ddd;
+}
+ul{
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    border: 1px inset #eee;
+}
+li:nth-child(n){
+    background-color: rgba(200, 200, 200, 0.5);
+}
+li:nth-child(2n){
+    background-color: rgba(240, 240, 240, 0.5);
+}
+li:nth-child(n):hover{
+    background-color: rgba(200, 200, 200, 1);
+}
+p{
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>selector</title>
+    <link rel="stylesheet" href="./global.css">
+</head>
+
+<body>
+    <p>选择器可以分组</p>
+    <p>CSS，子元素从父元素继承属性</p>
+    <pre>
+        /* 分组 */
+        <code>h1,h2,h3,h4,h5,h6</code> {
+                color: green;
+        }  
+    </pre>
+    <pre>
+        /* 选中 <b>&lt;p&gt;&lt;/p&gt;</b> */
+        p{color: red;}
+    </pre>
+    <hr>
+    <p>元素选择器</p>
+    <pre>
+        /*标签选择器*/
+        p{ }
+        <hr>
+        &lt;body&gt;
+            &lt;<code>p</code>&gt;标签选择器&lt;<code>/p</code>&gt;
+        &lt;/body&gt;
+    </pre>
+    <pre>
+        /*id选择器*/
+        #red
+        <hr>
+        &lt;body&gt;
+            &lt;p <code>id="red"</code>&gt;id选择器&lt;/p&gt;
+        &lt;/body&gt;
+    </pre>
+    <pre>
+        /*class选择器*/
+        .green
+        <hr>
+        &lt;body&gt;
+            &lt;p <code>class="green"</code>&gt;class选择器&lt;/p&gt;
+        &lt;/body&gt;
+    </pre>
+    <pre>
+        /*属性选择器*/
+        [title=mytitle]{}
+        <hr>
+        &lt;body&gt;
+            &lt;p <code>title="mytitle"</code>&gt; &lt;/p&gt;
+        &lt;/body&gt;
+    </pre>
+    <blockquote>优先级: id&gt;class&gt;标签</blockquote>
+    <hr>
+    <p>派生选择器contextual selectors</p>
+    <pre>
+        &lt;div&gt;
+            &lt;span&gt;&lt;/span&gt;
+            &lt;p&gt;
+                &lt;span&gt;&lt;/span&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+    </pre>
+    <pre>
+        /* 选中包含的元素 */
+        <code>div span</code>{}
+        /* 选中情况 */
+        &lt;div&gt;
+            <code>&lt;span&gt;&lt;/span&gt;</code>
+            &lt;p&gt;
+                <code>&lt;span&gt;&lt;/span&gt;</code>
+            &lt;/p&gt;
+        &lt;/div&gt;
+    </pre>
+    <pre>
+        /* 选中包含的元素 */
+        <code>div>span</code>{}
+        /* 选中情况 */
+        &lt;div&gt;
+            <code>&lt;span&gt;&lt;/span&gt;</code>
+            &lt;p&gt;
+                &lt;span&gt;&lt;/span&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+    </pre>
+</body>
+
+</html>

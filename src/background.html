@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>background</title>
+    <link rel="stylesheet" href="./global.css">
+    <style>
+        #sprite {
+            background-color: #eee;
+            background-image: url(./btn_start.png);
+            background-repeat: no-repeat;
+            background-size: auto 100px;
+            background-position: 50% 0%;
+            height: 50px;
+        }
+
+        #sprite:hover {
+            background-position: 50% 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>background</h1>
+    </center>
+    <section>
+        <h5>background-color:red|#f00|rgba(255,0,0,1)|transparent|inherit;</h5>
+        <ul>
+            <li style="background-color: rgba(255,0,0,0.5);">
+                background-color: rgba(255,0,0,0.5);
+            </li>
+            <li style="background-color: transparent;">
+                background-color: transparent;
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h5>background-image:url(./uri)|none|inherit;</h5>
+        <ul>
+            <li style="background-image:url(./eg_bg_04.gif);">
+                background-image:url(./eg_bg_04.gif);
+            </li>
+            <li style="background-image:none;">background-image:none;</li>
+        </ul>
+    </section>
+    <section>
+        <h5>background-repeat:repeat-x|repeat-y|repeat|no-repeat|inherit;</h5>
+    </section>
+    <section>
+        <h5>background-position:x% y%|xpx ypx;</h5>
+    </section>
+    <section>
+        <h5>background-attachment:scroll|fixed;</h5>
+    </section>
+    <section>
+        <h5>background-size: cover|contain|x% y%|xpx ypx;</h5>
+    </section>
+    <section>
+        <h5>css sprite</h5>
+        <p>
+            <span>将背景设置为一张大图片的一部分，</span>
+            <span>用background-size设置大背景的大小，并设置background-repeat: no-repeat;</span>
+            <span>background-position设置背景选取位置。</span>
+            <br>
+            <span>示例:</span>
+            <div id="sprite"></div>
+        </p>
+        <pre>
+            #sprite{
+                background-color: #eee;
+                background-image:url(./btn_start.png);
+                background-repeat: no-repeat;
+                background-size: auto 100px;
+                background-position: 50% 0%;
+                height: 50px;
+            }
+            #sprite:hover{
+                background-position: 50% 100%;
+            }
+        </pre>
+    </section>
+</body>
+
+</html>
