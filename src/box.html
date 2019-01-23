@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>box</title>
+    <link rel="stylesheet" href="./global.css">
+    <style>
+        .box{
+            display: flex;
+            background-color: #eee;
+            align-items:center;
+            justify-content:center;
+            margin: 20px;
+            outline-color: #6c6;
+            outline-width: 4px;
+        }
+        .mode-container{
+            border: #6c6 inset 3px;
+            text-align: center;
+        }
+        .mode-box{
+            margin: 50px auto;
+            padding: 50px;
+            height: 200px;
+            width: 600px;
+            display: block;
+            position: relative;
+            box-sizing: border-box;
+            outline: #fcc solid 50px;
+            border: #cfc solid 50px;
+        }
+        .mode-box:before{
+            content: "margin";
+            left:50%;
+            top:-1.5em;
+            position: absolute;
+            transform: translateX(-50%);
+            color: #f66;
+        }
+        .mode-box:after{
+            content: "asd";
+            position: absolute;
+        }
+        .mode-content{
+            position: relative;
+            background-color: red;
+        }
+        .mode-content:before{
+            content: "padding";
+            left:50%;
+            top:-1.5em;
+            position: absolute;
+            transform: translateX(-50%);
+            color: #f66;
+        }
+    </style>
+</head>
+<body>
+    <h3>outline: color style width</h3>
+    <section>
+        <h5>outline-style:dotted|dashed|solid|double|groove|ridge|inset|outset;</h5>
+        <ul>
+            <li class="box" style="outline-style: dotted;">outline-style: dotted;</li>
+            <li class="box" style="outline-style: dashed;">outline-style: dashed;</li>
+            <li class="box" style="outline-style: solid;">outline-style: solid;</li>
+            <li class="box" style="outline-style: double;">outline-style: double;</li>
+            <li class="box" style="outline-style: groove;">outline-style: groove;</li>
+            <li class="box" style="outline-style: ridge;">outline-style: ridge;</li>
+            <li class="box" style="outline-style: inset;">outline-style: inset;</li>
+            <li class="box" style="outline-style: outset;">outline-style: outset;</li>
+        </ul>
+    </section>
+    <section>
+        <div class="mode-container">
+            <span>margin</span>
+            <div class="mode-box">
+                <div class="mode-content">content</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
